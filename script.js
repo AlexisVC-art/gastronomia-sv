@@ -1,7 +1,7 @@
 ```javascript id="m2yzru"
-// ========================================
+
 // MENÚ HAMBURGUESA
-// ========================================
+
 
 const hamburger =
 document.getElementById('hamburger');
@@ -10,7 +10,7 @@ const navLinks =
 document.getElementById('navLinks');
 
 
-// EVENTO CLICK
+
 
 hamburger.addEventListener('click', () => {
 
@@ -20,9 +20,7 @@ hamburger.addEventListener('click', () => {
 
 
 
-// ========================================
-// CERRAR MENÚ AL HACER CLICK
-// ========================================
+
 
 const links =
 document.querySelectorAll('.nav-links a');
@@ -40,9 +38,9 @@ links.forEach(link => {
 
 
 
-// ========================================
+
 // FORMULARIO
-// ========================================
+
 
 const form =
 document.getElementById('reservationForm');
@@ -80,9 +78,9 @@ form.addEventListener('submit', function(e){
     message.style.color = 'red';
 
 
-    // ========================================
+
     // VALIDAR NOMBRE
-    // ========================================
+
 
     if(name.length < 3){
 
@@ -93,9 +91,9 @@ form.addEventListener('submit', function(e){
     }
 
 
-    // ========================================
+
     // VALIDAR EMAIL
-    // ========================================
+
 
     const emailRegex =
     /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -110,9 +108,9 @@ form.addEventListener('submit', function(e){
     }
 
 
-    // ========================================
+
     // VALIDAR FECHA
-    // ========================================
+
 
     const today = new Date();
 
@@ -131,9 +129,9 @@ form.addEventListener('submit', function(e){
     }
 
 
-    // ========================================
+
     // VALIDAR PERSONAS
-    // ========================================
+
 
     if(people <= 0){
 
@@ -144,9 +142,7 @@ form.addEventListener('submit', function(e){
     }
 
 
-    // ========================================
-    // ÉXITO
-    // ========================================
+
 
     message.style.color = 'green';
 
@@ -162,9 +158,9 @@ form.addEventListener('submit', function(e){
 
 
 
-// ========================================
-// EFECTO SCROLL EN NAVBAR
-// ========================================
+
+// SCROLL EN NAVBAR
+
 
 window.addEventListener('scroll', () => {
 
@@ -196,9 +192,9 @@ window.addEventListener('scroll', () => {
 
 
 
-// ========================================
+
 // EFECTO HOVER DINÁMICO EN CARDS
-// ========================================
+
 
 const cards =
 document.querySelectorAll('.card');
