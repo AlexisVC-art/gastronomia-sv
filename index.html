@@ -1,208 +1,383 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gastronomía de El Salvador</title>
 
+    <title>Sabores SV | Gastronomía de El Salvador</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <!-- NAVBAR -->
+    <!-- ========================= -->
+    <!-- HEADER / NAVBAR -->
+    <!-- ========================= -->
+
     <header class="header">
-        <nav class="navbar">
+
+        <nav class="navbar container">
+
             <div class="logo">
                 Sabores SV
             </div>
 
             <ul class="nav-links" id="navLinks">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#reservas">Reservas</a></li>
+
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="#nosotros">Nosotros</a>
+                </li>
+
+                <li>
+                    <a href="#servicios">Servicios</a>
+                </li>
+
+                <li>
+                    <a href="#reservas">Reservas</a>
+                </li>
+
             </ul>
 
+            <!-- MENÚ HAMBURGUESA -->
+
             <div class="hamburger" id="hamburger">
+
                 <span></span>
                 <span></span>
                 <span></span>
+
             </div>
+
         </nav>
+
     </header>
 
-    <!-- HERO -->
-    <section class="hero" id="inicio">
-        <div class="hero-overlay">
+
+    <!-- ========================= -->
+    <!-- MAIN -->
+    <!-- ========================= -->
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero" id="inicio">
+
+            <div class="overlay"></div>
+
             <div class="hero-content">
-                <h1>Descubre los Sabores Tradicionales de El Salvador</h1>
+
+                <span class="tag">
+                    Tradición • Cultura • Sabor
+                </span>
+
+                <h1>
+                    Descubre la auténtica gastronomía de El Salvador
+                </h1>
+
                 <p>
-                    Vive una experiencia gastronómica auténtica entre pupusas, tamales,
-                    atol de elote y recetas ancestrales llenas de historia y tradición.
+                    Vive una experiencia culinaria única entre pupusas artesanales,
+                    tamales tradicionales, atol de elote y recetas ancestrales
+                    preparadas con ingredientes frescos y locales.
                 </p>
 
-                <a href="#reservas" class="btn">
-                    Reserva tu experiencia
+                <a href="#reservas" class="btn-primary">
+                    Reservar experiencia
                 </a>
-            </div>
-        </div>
-    </section>
 
-    <!-- NOSOTROS -->
-    <section class="about" id="nosotros">
-        <div class="container">
-            <div class="section-title">
-                <h2>Nosotros</h2>
             </div>
 
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        En Sabores SV creemos que cada platillo cuenta una historia.
-                        Nuestro proyecto nace con la pasión de preservar las recetas
-                        tradicionales salvadoreñas que han pasado de generación en generación.
-                    </p>
+        </section>
 
-                    <p>
-                        Elaboramos pupusas artesanales, tamales tradicionales y bebidas
-                        típicas utilizando ingredientes frescos cultivados por productores
-                        locales. Cada sabor refleja el calor del hogar salvadoreño y el orgullo
-                        de nuestra cultura gastronómica.
-                    </p>
 
-                    <p>
-                        Además de nuestro restaurante y pupusería, promovemos experiencias
-                        gastronómicas donde visitantes nacionales e internacionales pueden
-                        aprender, cocinar y conocer la riqueza culinaria de El Salvador.
-                    </p>
-                </div>
+        <!-- ========================= -->
+        <!-- NOSOTROS -->
+        <!-- ========================= -->
+
+        <section class="about section" id="nosotros">
+
+            <div class="container about-grid">
 
                 <div class="about-image">
+
                     <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=1200&auto=format&fit=crop" alt="Comida salvadoreña">
+
                 </div>
+
+
+                <div class="about-text">
+
+                    <h2>
+                        Preservando el sabor de nuestras raíces
+                    </h2>
+
+                    <p>
+                        En Sabores SV creemos que cada platillo cuenta una historia.
+                        Nuestro restaurante y pupusería nace con el propósito de
+                        mantener viva la tradición gastronómica salvadoreña mediante
+                        recetas auténticas transmitidas de generación en generación.
+                    </p>
+
+                    <p>
+                        Utilizamos ingredientes frescos provenientes de productores
+                        locales para ofrecer sabores tradicionales llenos de identidad,
+                        cultura y orgullo salvadoreño.
+                    </p>
+
+                </div>
+
             </div>
-        </div>
-    </section>
 
-    <!-- SERVICIOS -->
-    <section class="services" id="servicios">
-        <div class="container">
+        </section>
 
-            <div class="section-title">
-                <h2>Nuestros Servicios</h2>
-            </div>
 
-            <div class="cards-container">
+        <!-- ========================= -->
+        <!-- SERVICIOS -->
+        <!-- ========================= -->
 
-                <!-- CARD 1 -->
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Gastronomía de El Salvador</h3>
+        <section class="services section" id="servicios">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span>
+                        Nuestros Servicios
+                    </span>
+
+                    <h2>
+                        Experiencias gastronómicas auténticas
+                    </h2>
+
+                </div>
+
+
+                <div class="cards-container">
+
+                    <!-- CARD 1 -->
+
+                    <article class="card">
+
+                        <div class="card-icon">
+                            🍽️
+                        </div>
+
+                        <h3>
+                            Gastronomía de El Salvador
+                        </h3>
 
                         <p>
-                            Disfruta un menú lleno de sabores tradicionales: pupusas
-                            de queso, frijol y chicharrón, yuca frita, panes con pollo,
-                            riguas y atol de elote. Cada platillo refleja la esencia de
-                            nuestra historia culinaria y el uso de ingredientes frescos
-                            cultivados en tierras salvadoreñas.
+                            Disfruta pupusas artesanales, yuca frita,
+                            panes con pollo, tamales y bebidas típicas
+                            elaboradas con ingredientes frescos y recetas tradicionales.
                         </p>
-                    </div>
-                </div>
 
-                <!-- CARD 2 -->
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Tours Gastronómicos</h3>
+                    </article>
+
+
+                    <!-- CARD 2 -->
+
+                    <article class="card">
+
+                        <div class="card-icon">
+                            🌽
+                        </div>
+
+                        <h3>
+                            Tours Gastronómicos
+                        </h3>
 
                         <p>
-                            Vive experiencias guiadas donde aprenderás a preparar pupusas
-                            desde cero, visitarás mercados locales y descubrirás ingredientes
-                            típicos como el maíz, el loroco y el chipilín mientras conoces
-                            la cultura y tradición salvadoreña.
+                            Aprende a preparar pupusas, conoce mercados locales
+                            y descubre la riqueza culinaria salvadoreña mediante
+                            experiencias guiadas llenas de cultura.
                         </p>
-                    </div>
-                </div>
 
-                <!-- CARD 3 -->
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Eventos y Banquetes</h3>
+                    </article>
+
+
+                    <!-- CARD 3 -->
+
+                    <article class="card">
+
+                        <div class="card-icon">
+                            🎉
+                        </div>
+
+                        <h3>
+                            Eventos y Banquetes
+                        </h3>
 
                         <p>
-                            Ofrecemos catering tradicional para cumpleaños, reuniones
-                            empresariales y celebraciones familiares. Llevamos la auténtica
-                            cocina salvadoreña a tus eventos con presentaciones modernas
-                            y sabores inolvidables.
+                            Servicio de catering tradicional para celebraciones,
+                            reuniones y eventos especiales con el auténtico sabor
+                            salvadoreño.
                         </p>
-                    </div>
+
+                    </article>
+
                 </div>
 
             </div>
-        </div>
-    </section>
 
-    <!-- RESERVAS -->
-    <section class="reservation" id="reservas">
-        <div class="container">
+        </section>
 
-            <div class="section-title">
-                <h2>Reserva tu Mesa</h2>
+
+        <!-- ========================= -->
+        <!-- FORMULARIO -->
+        <!-- ========================= -->
+
+        <section class="reservation section" id="reservas">
+
+            <div class="container">
+
+                <div class="section-header center">
+
+                    <span>
+                        Reserva en línea
+                    </span>
+
+                    <h2>
+                        Reserva tu mesa
+                    </h2>
+
+                </div>
+
+
+                <form class="reservation-form" id="reservationForm">
+
+                    <div class="input-group">
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Nombre completo"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Correo electrónico"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <input
+                            type="date"
+                            id="date"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <input
+                            type="number"
+                            id="people"
+                            placeholder="Número de personas"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- MENSAJES -->
+
+                    <div id="message"></div>
+
+
+                    <button type="submit" class="btn-primary full-btn">
+
+                        Confirmar reserva
+
+                    </button>
+
+                </form>
+
             </div>
 
-            <form id="reservationForm" class="reservation-form">
+        </section>
 
-                <div class="form-group">
-                    <input type="text" id="name" placeholder="Nombre completo" required>
-                </div>
+    </main>
 
-                <div class="form-group">
-                    <input type="email" id="email" placeholder="Correo electrónico" required>
-                </div>
 
-                <div class="form-group">
-                    <input type="date" id="date" required>
-                </div>
-
-                <div class="form-group">
-                    <input type="number" id="people" placeholder="Número de personas" min="1" required>
-                </div>
-
-                <div id="message"></div>
-
-                <button type="submit" class="btn">
-                    Reservar Ahora
-                </button>
-
-            </form>
-        </div>
-    </section>
-
+    <!-- ========================= -->
     <!-- FOOTER -->
+    <!-- ========================= -->
+
     <footer class="footer">
 
-        <div class="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">TikTok</a>
+        <div class="footer-content">
+
+            <h3>
+                Sabores SV
+            </h3>
+
+            <p>
+                Tradición salvadoreña servida con orgullo y pasión.
+            </p>
+
+            <div class="social-links">
+
+                <a href="#">
+                    Facebook
+                </a>
+
+                <a href="#">
+                    Instagram
+                </a>
+
+                <a href="#">
+                    TikTok
+                </a>
+
+            </div>
+
+            <p>
+                © 2026 Sabores SV — Todos los derechos reservados.
+            </p>
+
+            <p class="credits">
+
+                Integrantes:
+                [Nombre del Integrante 1],
+                [Nombre del Integrante 2],
+                [Nombre del Integrante 3]
+
+            </p>
+
         </div>
-
-        <p>
-            © 2026 Sabores SV | Todos los derechos reservados.
-        </p>
-
-        <p class="credits">
-            Desarrollado por:
-            [Nombre del Integrante 1],
-            [Nombre del Integrante 2],
-            [Nombre del Integrante 3]
-        </p>
 
     </footer>
 
+
+    <!-- JS -->
     <script src="script.js"></script>
 
 </body>
 </html>
+```
