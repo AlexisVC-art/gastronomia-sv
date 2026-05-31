@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor Cuscatleco | Gastronomía de El Salvador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="logo">Sabor Cuscatleco</div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Reservas</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Tradición en cada bocado</h1>
+            <p>Descubre la auténtica esencia de la comida salvadoreña, desde nuestras famosas pupusas hasta los sabores del mar.</p>
+        </div>
+    </header>
+
+    <section id="nosotros" class="section">
+        <h2>Nuestra Historia</h2>
+        <p>Somos una ventana a las raíces de El Salvador. Nuestro compromiso es preservar las recetas ancestrales de nuestras abuelas, utilizando ingredientes frescos de la región.</p>
+    </section>
+
+    <section id="servicios" class="section">
+        <h2>Nuestras Experiencias</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Pupusería Tradicional</h3>
+                <p>Pupusas de maíz y arroz hechas a mano con el curtido y salsa especial de la casa.</p>
+            </div>
+            <div class="card">
+                <h3>Tour Gastronómico</h3>
+                <p>Un recorrido guiado por los mercados y sabores más icónicos de nuestra tierra.</p>
+            </div>
+            <div class="card">
+                <h3>Eventos Privados</h3>
+                <p>Llevamos el sabor cuscatleco a tus celebraciones especiales con menús personalizados.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section">
+        <h2>Reserva tu Mesa</h2>
+        <form id="reservaForm">
+            <input type="text" id="nombre" placeholder="Nombre completo" required>
+            <input type="email" id="email" placeholder="Correo electrónico" required>
+            <input type="date" id="fecha" required>
+            <button type="submit">Confirmar Reserva</button>
+            <p id="mensajeError" class="error"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Sabor Cuscatleco. Todos los derechos reservados.</p>
+        <p>Desarrollado por: [Tu Nombre / Integrantes]</p>
+        <div class="socials">
+            <a href="#">FB</a> | <a href="#">IG</a> | <a href="#">TW</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
